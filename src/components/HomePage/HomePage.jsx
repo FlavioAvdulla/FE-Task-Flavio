@@ -29,7 +29,7 @@ const HomePage = () => {
   return (
     <div className="homepage">
       <div className="homepage-container">
-      <h1>DataBase Management</h1>
+      <h1>Database Management</h1>
       <div className="homepage-buttons">
         <button onClick={handleReadUsers}>VIEW USERS</button>
         <button onClick={handleCreateUser}>CREATE USER</button>

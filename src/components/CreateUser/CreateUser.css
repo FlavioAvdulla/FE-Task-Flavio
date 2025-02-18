@@ -2,10 +2,18 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 100%;
+    width: auto;
     height: 100vh;
     margin: auto;
     /* background-color: rgb(224, 255, 255); */
+}
+
+.form-container {
+    display: flex;
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    /* background-color: aquamarine; */
 }
 
 .create-user  h1 {
@@ -34,7 +42,15 @@
 .user-info {
     display: flex;
     flex-direction: column;
-    width: 300px;
+    /* background-color: rgb(80, 182, 182); */
+    width: 100%;
+    gap: 20px;
+}
+
+.user-inputs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
     margin: auto;
     gap: 10px;
 }
@@ -42,7 +58,15 @@
 .address-info {
     display: flex;
     flex-direction: column;
-    width: 300px;
+    /* background-color: rgb(80, 182, 182); */
+    width: 100%;
+    gap: 20px;
+}
+
+.address-inputs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
     margin: auto;
     gap: 10px;
 }
@@ -65,7 +89,7 @@
 }
 
 .form-container button:hover {
-    background-color: transparent;
+    background-color: white;
     color: rgb(0, 136, 255);
     scale: 105%;
 }
