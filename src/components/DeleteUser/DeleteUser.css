@@ -1,0 +1,47 @@
+.delete-user {
+    display: flex;
+    margin: 0px auto;
+    justify-content: center;
+    width: 85vw;
+    height: 100vh;
+    /* background-color: bisque; */
+}
+
+.delete-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.delete-user input {
+    width: 300px;
+    height: 60px;
+    padding: 0px 12px;
+    outline: none;
+    font-size: 15px;
+    border: none;
+    background-color: #f4f4f4;
+}
+
+.delete-user button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px rgb(0, 136, 255);
+    width: 200px;
+    height: 60px;
+    font-weight: 300;
+    font-size: 15px;
+    background-color: rgb(0, 136, 255);
+    color: white;
+    font-family: 'CamptonLight', sans-serif;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    margin: 10px 0;
+}
+
+.delete-user button:hover {
+    background-color: white;
+    color: rgb(0, 136, 255);
+    scale: 105%;
+}
