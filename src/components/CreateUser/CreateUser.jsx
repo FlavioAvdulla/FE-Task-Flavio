@@ -130,7 +130,7 @@ const CreateUser = () => {
           </div>
 
           <div className="address-info">
-            <label>Address</label>
+            <label>Address Info</label>
             <div className="address-inputs">
               <input
                 type="text"
