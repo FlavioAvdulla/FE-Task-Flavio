@@ -61,7 +61,7 @@ const ReadUser = () => {
               <td>{user.company.companyName}</td>
               <td>{user.company.catchPhrase}</td>
               <td>{user.company.bs}</td>
-              <td className="icon" onClick={() => deleteUser(user.id)}><i><IoIosCloseCircle/></i></td>
+              <td className="icon" onClick={() => deleteUser(user.id)}><IoIosCloseCircle className="close-icon"/></td>
             </tr>
           ))}
         </tbody>
