@@ -21,6 +21,8 @@ const DeleteUser = () => {
   return (
     <div className="delete-user">
       <div className="delete-container">
+      <h1>Delete User</h1>
+        <div className="delete-input">
       <input
         type="text"
         value={userId}
@@ -28,6 +30,7 @@ const DeleteUser = () => {
         placeholder="Enter User ID"
       />
       <button onClick={handleDelete}>Delete User</button>
+      </div>
       </div>
     </div>
   );

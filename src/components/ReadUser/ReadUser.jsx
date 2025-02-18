@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./ReadUser.css";
+import { IoIosCloseCircle } from "react-icons/io";
 
 const ReadUser = () => {
   const [users, setUsers] = useState([]);
@@ -13,6 +14,16 @@ const ReadUser = () => {
     fetchUsers();
   }, []);
 
+  const deleteUser = async (id) => {
+    try {
+      await fetch(`http://localhost:8000/users/${id}`, { method: 'DELETE' });
+      setUsers(users.filter(user => user.id !== id));
+      alert(`User with ID ${id} has been deleted`);
+    } catch (err) {
+      console.error('Failed to delete user:', err);
+    }
+  };
+
   return (
     <div className="read-users">
       <table>
@@ -22,12 +33,16 @@ const ReadUser = () => {
             <th>Name</th>
             <th>Username</th>
             <th>Email</th>
-            <th>Address</th>
+            <th>Street</th>
+            <th>Suite</th>
+            <th>City</th>
+            <th>Zipcode</th>
             <th>Phone</th>
             <th>Website</th>
             <th>Company</th>
             <th>CatchPhrase</th>
             <th>Bs</th>
+            <th className="delete">Delete</th>
           </tr>
         </thead>
         <tbody>
@@ -37,16 +52,16 @@ const ReadUser = () => {
               <td>{user.name}</td>
               <td>{user.username}</td>
               <td>{user.email}</td>
-              <td>
-                {user.address
-                  ? `${user.address.street}, ${user.address.suite}, ${user.address.city}, ${user.address.zipcode}`
-                  : "N/A"}
-              </td>
+              <td>{user.address.street}</td>
+              <td>{user.address.suite}</td>
+              <td>{user.address.city}</td>
+              <td>{user.address.zipcode}</td>
               <td>{user.phone}</td>
               <td>{user.website}</td>
               <td>{user.company.companyName}</td>
               <td>{user.company.catchPhrase}</td>
               <td>{user.company.bs}</td>
+              <td className="icon" onClick={() => deleteUser(user.id)}><i><IoIosCloseCircle/></i></td>
             </tr>
           ))}
         </tbody>
