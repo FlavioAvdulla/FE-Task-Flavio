@@ -1,0 +1,9 @@
+.update-user {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: auto;
+    height: 100vh;
+    margin: auto;
+    /* background-color: rgb(224, 255, 255); */
+}

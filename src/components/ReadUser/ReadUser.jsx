@@ -1,9 +1,14 @@
 import React, { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import "./ReadUser.css";
+
+// React Icons
 import { IoIosCloseCircle } from "react-icons/io";
+import { AiFillEdit } from "react-icons/ai";
 
 const ReadUser = () => {
   const [users, setUsers] = useState([]);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const fetchUsers = async () => {
@@ -24,6 +29,10 @@ const ReadUser = () => {
     }
   };
 
+  const handleEditUser = (id) => {
+    navigate(`/update-user/${id}`);
+  };
+
   return (
     <div className="read-users">
       <table>
@@ -42,6 +51,7 @@ const ReadUser = () => {
             <th>Company</th>
             <th>CatchPhrase</th>
             <th>Bs</th>
+            <th className="edit">Edit</th>
             <th className="delete">Delete</th>
           </tr>
         </thead>
@@ -61,7 +71,8 @@ const ReadUser = () => {
               <td>{user.company.companyName}</td>
               <td>{user.company.catchPhrase}</td>
               <td>{user.company.bs}</td>
-              <td className="icon" onClick={() => deleteUser(user.id)}><IoIosCloseCircle className="close-icon"/></td>
+              <td className="edit" onClick={() => handleEditUser(user.id)}><AiFillEdit className="edit-icon"/></td>
+              <td className="delete" onClick={() => deleteUser(user.id)}><IoIosCloseCircle className="close-icon"/></td>
             </tr>
           ))}
         </tbody>

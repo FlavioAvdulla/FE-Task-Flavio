@@ -1,33 +1,16 @@
 {
   "users": [
     {
-      "id": 3,
-      "name": "Clementine Bauch",
-      "username": "Samantha",
-      "email": "Nathan@yesenia.net",
-      "address": {
-        "street": "Douglas Extension",
-        "suite": "Suite 847",
-        "city": "McKenziehaven",
-        "zipcode": "59590-4157",
-        "geo": {
-          "lat": "-68.6102",
-          "lng": "-47.0653"
-        }
-      },
-      "phone": "1-463-123-4447",
-      "website": "ramiro.info",
-      "company": {
-        "companyName": "Romaguera-Jacobson",
-        "catchPhrase": "Face to face bifurcated interface",
-        "bs": "e-enable strategic applications"
-      }
-    },
-    {
-      "id": 4,
       "name": "Patricia Lebsack",
-      "username": "Karianne",
+      "username": "Karianneefiowefijewo",
       "email": "Julianne.OConner@kory.org",
+      "phone": "48975739485",
+      "website": "kale.biz",
+      "company": {
+        "companyName": "Robel-Corkery",
+        "catchPhrase": "Multi-tiered zero tolerance productivity",
+        "bs": "transition cutting-edge web services"
+      },
       "address": {
         "street": "Hoeger Mall",
         "suite": "Apt. 692",
@@ -38,19 +21,19 @@
           "lng": "-164.2990"
         }
       },
-      "phone": "493-170-9623 x156",
-      "website": "kale.biz",
-      "company": {
-        "companyName": "Robel-Corkery",
-        "catchPhrase": "Multi-tiered zero tolerance productivity",
-        "bs": "transition cutting-edge web services"
-      }
+      "id": 4
     },
     {
-      "id": 5,
       "name": "Chelsey Dietrich",
-      "username": "Kamren",
+      "username": "Kamrennerhfuiaeghrgfiuer",
       "email": "Lucio_Hettinger@annie.ca",
+      "phone": "48975739485",
+      "website": "demarco.info",
+      "company": {
+        "companyName": "Keebler LLC",
+        "catchPhrase": "User-centric fault-tolerant solution",
+        "bs": "revolutionize end-to-end systems"
+      },
       "address": {
         "street": "Skiles Walks",
         "suite": "Suite 351",
@@ -61,13 +44,7 @@
           "lng": "62.5342"
         }
       },
-      "phone": "(254)954-1289",
-      "website": "demarco.info",
-      "company": {
-        "companyName": "Keebler LLC",
-        "catchPhrase": "User-centric fault-tolerant solution",
-        "bs": "revolutionize end-to-end systems"
-      }
+      "id": 5
     },
     {
       "id": 6,
@@ -183,6 +160,29 @@
         "catchPhrase": "Centralized empowering task-force",
         "bs": "target end-to-end models"
       }
+    },
+    {
+      "name": "FLAVIO AVDULLA",
+      "username": "flavi",
+      "email": "a.flavio4366@gmail.com",
+      "address": {
+        "street": "Marin Barleti",
+        "suite": "reg",
+        "city": "Tirana",
+        "zipcode": "1001",
+        "geo": {
+          "latitude": "23",
+          "longitude": "43"
+        }
+      },
+      "phone": "0676311918",
+      "website": "www.polaris.com",
+      "company": {
+        "companyName": "Polaris Online Store",
+        "catchPhrase": "efwggefwef",
+        "bs": "efwe"
+      },
+      "id": 11
     }
   ]
 }

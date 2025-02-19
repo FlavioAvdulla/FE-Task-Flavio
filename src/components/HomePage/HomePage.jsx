@@ -6,9 +6,8 @@ const HomePage = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    const path = window.location.pathname; // Use window.location to get the pathname
+    const path = window.location.pathname;
     if (path === "/") {
-      // Example logic for activation state
       console.log("Home Page Activated");
     } else if (path.includes("/create-user")) {
       console.log("Create User Page Activated");
@@ -25,6 +24,9 @@ const HomePage = () => {
   const handleDeleteUser = () => {
     navigate("/delete-user");
   };
+  const handleUpdateUser = () => {
+    navigate("/update-user");
+  };
 
   return (
     <div className="homepage">
@@ -33,6 +35,7 @@ const HomePage = () => {
       <div className="homepage-buttons">
         <button onClick={handleReadUsers}>VIEW USERS</button>
         <button onClick={handleCreateUser}>CREATE USER</button>
+        <button onClick={handleUpdateUser}>UPDATE USER</button>
         <button onClick={handleDeleteUser}>DELETE USER</button>
       </div>
       </div>

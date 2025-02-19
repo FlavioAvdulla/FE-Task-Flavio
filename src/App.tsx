@@ -12,10 +12,10 @@ function App() {
     <div className="app">
       <Router>
         <Routes>
-          <Route path="/" element={<HomePage /> } />
+          <Route path="/" element={<HomePage />} />
           <Route path="/create-user" element={<CreateUser />} />
           <Route path="/read-user" element={<ReadUser />} />
-          <Route path="/update-user" element={<UpdateUser />} />
+          <Route path="/update-user/:id" element={<UpdateUser />} />
           <Route path="/delete-user" element={<DeleteUser />} />
         </Routes>
       </Router>
