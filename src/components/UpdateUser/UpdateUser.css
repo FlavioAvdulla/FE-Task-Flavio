@@ -7,3 +7,9 @@
     margin: auto;
     /* background-color: rgb(224, 255, 255); */
 }
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}

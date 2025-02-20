@@ -24,9 +24,9 @@ const HomePage = () => {
   const handleDeleteUser = () => {
     navigate("/delete-user");
   };
-  const handleUpdateUser = () => {
-    navigate("/update-user");
-  };
+  // const handleUpdateUser = () => {
+  //   navigate("/update-user");
+  // };
 
   return (
     <div className="homepage">
@@ -35,7 +35,7 @@ const HomePage = () => {
       <div className="homepage-buttons">
         <button onClick={handleReadUsers}>VIEW USERS</button>
         <button onClick={handleCreateUser}>CREATE USER</button>
-        <button onClick={handleUpdateUser}>UPDATE USER</button>
+        {/* <button onClick={handleUpdateUser}>UPDATE USER</button> */}
         <button onClick={handleDeleteUser}>DELETE USER</button>
       </div>
       </div>
